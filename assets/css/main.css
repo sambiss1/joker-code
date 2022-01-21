@@ -1,0 +1,804 @@
+/* CSS for joker-code */
+
+
+/* Import font-family */
+
+
+/* Raleway */
+
+@font-face {
+    font-family: 'raleway';
+    src: url("./font-family/raleway/Raleway-VariableFont_wght.ttf");
+}
+
+
+/* Barlow condensend */
+
+@font-face {
+    font-family: 'barlow-condensed-regular';
+    src: url("./font-family/barlow_condensed/BarlowCondensed-Regular.ttf");
+}
+
+
+/* Work sans */
+
+@font-face {
+    font-family: 'work-sans';
+    src: url("./font-family/work_sans/WorkSans-VariableFont_wght.ttf");
+}
+
+
+/* Archivo */
+
+@font-face {
+    font-family: 'archivo';
+    src: url("./font-family/archivo/Archivo-VariableFont_wdth\,wght.ttf");
+}
+
+
+/* Inconsolota */
+
+@font-face {
+    font-family: 'inconsolata';
+    src: url("./font-family/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf");
+}
+
+
+/* Mukta */
+
+@font-face {
+    font-family: 'mukta-regular';
+    src: url("./font-family/mukta/Mukta-Regular.ttf")
+}
+
+
+/* Shadows in light */
+
+@font-face {
+    font-family: 'shadows-in-light';
+    src: url("./font-family/shadows_into_light/ShadowsIntoLight-Regular.ttf");
+}
+
+
+/* Corinthia */
+
+@font-face {
+    font-family: 'corinthia';
+    src: url("./font-family/corinthia/Corinthia-Regular.ttf");
+}
+
+
+/* Normalize CSS */
+
+* {
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    scroll-behavior: smooth;
+}
+
+-ms-viewport {
+    width: device-width;
+}
+
+-o-viewport,
+-moz-viewport {
+    width: device-width;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* Body preloading */
+
+body.is-preload *,
+body.is-preload *:before,
+body.is-preload *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+
+/* Html and body default parameters*/
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #f7f7f7;
+    background-image: url("../images/cool-background.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center left;
+}
+
+
+/* contaner */
+
+.container {
+    max-width: 1440px;
+    font-family: archivo;
+    margin: auto;
+    border: 1px solid black;
+}
+
+
+/* site header */
+
+.site-header {
+    width: 100%;
+    max-width: 1200px;
+    /*border: 1px solid #000;*/
+    font-family: work-sans !important;
+}
+
+
+/* Navigation menu */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 25px;
+}
+
+
+/* Navigation bar */
+
+.navbar ul {
+    color: midnightblue;
+    font-family: raleway;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar a {
+    text-decoration: none;
+    position: relative;
+    padding: 6px 0;
+}
+
+.navbar a:hover {
+    color: #003;
+}
+
+.navbar li a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: midnightblue;
+    transition: all 0.4s ease;
+}
+
+.navbar a.active {
+    color: #fff;
+}
+
+.navbar li a:hover:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: midnightblue;
+}
+
+.navbar li {
+    padding: 0px 25px;
+}
+
+ul li {
+    list-style: none;
+}
+
+
+/* Site logo */
+
+.site-logo {
+    font-family: archivo;
+    border: 1px solid #000;
+}
+
+.site-logo a {
+    text-decoration: none;
+}
+
+.site-logo a:visited {
+    color: midnightblue;
+}
+
+
+/* Row */
+
+.row {
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+
+/* Column */
+
+.column {
+    float: left;
+    margin: 20px 0px;
+    padding: 50px 0px;
+    height: auto;
+    width: 100%;
+    white-space: normal;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Left and Right column */
+
+.left,
+.right {
+    width: 50%;
+    padding: 50px 30px;
+    float: left;
+}
+
+.left {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.right {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+
+/*  */
+
+
+/* Slides */
+
+.slides {
+    height: auto;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    background: url("../images/background-joker-10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+
+/* slides text*/
+
+.slide-text {
+    padding: 50px 50px;
+    font-family: inconsolata;
+}
+
+.hi {
+    font-size: 100px;
+    color: #111124;
+    font-family: shadows-in-light;
+}
+
+.moi,
+.autre-moi,
+.my-job {
+    font-size: 38px;
+    color: #fff;
+}
+
+.sam,
+.bisselele,
+.job {
+    font-size: 70px;
+    color: #111124;
+    font-family: shadows-in-light;
+}
+
+.joker-code-name {
+    font-size: 90px;
+    color: #111124;
+    font-family: shadows-in-light;
+}
+
+
+/*typing text */
+
+.sam .bisselele .job .typing-text {
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #111124;
+    animation: typing 5s steps(15) infinite;
+    /*background: red;
+    */
+}
+
+@keyframes typing {
+    0% {
+        width: 0ch;
+    }
+    50% {
+        width: 15ch;
+    }
+    100% {
+        width: 0ch;
+    }
+}
+
+
+/* Hire me button */
+
+.hire-me-button {
+    font-size: 35px;
+    margin: 20px 0px;
+    padding: 20px 50px;
+    border-radius: 15px 15px 15px 15px;
+    background: #111124;
+    color: #fff;
+    transition: background 0.4s ease;
+}
+
+.hire-me-button:hover {
+    background: #EC1F26;
+    color: #000;
+}
+
+
+/* End slides */
+
+
+/* Services row */
+
+.row-column-direction {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* services title area */
+
+.services-title-area {
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0px;
+    font-family: inconsolata;
+}
+
+.title-services {
+    animation: movetodown 0.3s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+@keyframes movetodown {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+
+/* Card column */
+
+.card-column {
+    float: left;
+    box-shadow: 5px 5px 5px 5px #dbdbdb;
+    width: 18%;
+    padding: 10px 25px;
+    margin: 0px 15px;
+    height: 400px;
+    border-radius: 5px 5px 5px 5px;
+    font-family: work-sans;
+}
+
+.card-column>h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0px;
+    text-align: center;
+    height: 50px;
+    font-family: work-sans;
+}
+
+.card-column:hover {
+    animation: fadein
+}
+
+
+/*End services row */
+
+
+/* About me row */
+
+.about-me-text {
+    font-family: work-sans;
+}
+
+.title-about-me {
+    font-size: 50px;
+    margin: 40px 0px;
+    font-family: inconsolata;
+    position: relative;
+}
+
+.title-about-me:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: midnightblue;
+    transition: all 0.4s ease;
+}
+
+.title-about-me:hover:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 50%;
+    background: midnightblue;
+}
+
+.image-me,
+.me {
+    width: 100%;
+}
+
+.button-see-more {
+    height: 50px;
+    width: 150px;
+    margin: 30px 0;
+    background: #111124;
+    color: #fff;
+    transition: background 0.4s ease;
+    border-radius: 10px;
+}
+
+.button-see-more:hover {
+    background: #EC1F26;
+    color: #000;
+}
+
+
+/* End about me */
+
+
+/* Skills */
+
+.skills {
+    background: url("../images/background-joker-3.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    height: auto;
+}
+
+.skills-title-area {
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0px;
+    font-family: inconsolata;
+}
+
+.developpement-informatique,
+.network-computer,
+.office-automation {
+    width: 25%;
+    float: left;
+    box-shadow: 5px 5px 5px 5px rgb(15, 15, 43);
+    padding: 10px 25px;
+    margin: 20px 20px;
+    border-radius: 5px 5px 5px 5px;
+    background: #dbdbdb;
+    height: max-content;
+}
+
+.developpement-informatique>h4,
+.network-computer>h4,
+.office-automation>h4 {
+    font-size: 25px;
+    margin: 20px 0px;
+}
+
+.skill-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    font-size: 18px;
+    padding: 10px 15px;
+    background: red;
+    margin: 10px 0px;
+    color: #fff;
+}
+
+.technology {
+    text-align: left !important;
+    float: left;
+}
+
+.pourcentage-content {
+    text-align: right;
+    float: right;
+    margin: 10px 0px;
+    padding: 10px 15px;
+}
+
+.pourcentage {
+    text-align: right;
+    float: right;
+}
+
+
+/* It developpment technology */
+
+.html {
+    width: 100%;
+    background-color: #04AA6D;
+}
+
+.css {
+    width: 55%;
+    background-color: #0000FF;
+}
+
+.javascript {
+    width: 50%;
+    background-color: #5F9EA0;
+}
+
+.jquery {
+    width: 35%;
+    background-color: #7FFF00;
+}
+
+.bootstrap {
+    width: 35%;
+    background-color: #FF7F50;
+}
+
+.nodejs {
+    width: 25%;
+    background-color: #6495ED;
+}
+
+.mysql {
+    width: 30%;
+    background-color: #DC143C;
+}
+
+.python {
+    width: 68%;
+    background-color: #B8860B;
+}
+
+.php {
+    width: 55%;
+    background-color: #006400;
+}
+
+.wordpress {
+    width: 55%;
+    background-color: #1E90FF;
+}
+
+
+/* Ntework computer technology */
+
+.mikrotik {
+    width: 50%;
+    background-color: #FFD700;
+}
+
+.cisco {
+    width: 60%;
+    background-color: #008000;
+}
+
+
+/* Office automation technology */
+
+.office-word {
+    width: 80%;
+    background-color: #008000;
+}
+
+.office-excel {
+    width: 60%;
+    background-color: #008000;
+}
+
+.office-access {
+    width: 50%;
+    background-color: #008000;
+}
+
+.office-publisher {
+    width: 50%;
+    background-color: #008000;
+}
+
+.office-power-point {
+    width: 50%;
+    background-color: #008000;
+}
+
+
+/* End skills */
+
+
+/* Projects done */
+
+.projects-title-area {
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0px;
+    font-family: inconsolata;
+}
+
+.projects-list {
+    margin: 30px 40px;
+}
+
+.projects-item {
+    font-size: 20px;
+    padding: 25px 0px;
+    text-align: center;
+}
+
+
+/* End projects */
+
+
+/* Contact */
+
+.contact-title-area {
+    font-size: 50px;
+    text-align: center;
+    margin: 40px 0px;
+    font-family: inconsolata;
+}
+
+.title-contact {
+    padding: 30px 0;
+}
+
+.contact-text {
+    font-size: 20px;
+    font-family: raleway;
+}
+
+form {
+    border: inherit;
+    display: block;
+    margin: auto;
+    font-family: 'Raleway';
+    font-size: 20px;
+    padding: 50px 25px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 12px 0 12px 12px;
+    margin: 25px 0px;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.send-button {
+    -moz-transition: background-color .25s ease-in-out;
+    -webkit-transition: background-color .25s ease-in-out;
+    -ms-transition: background-color .25s ease-in-out;
+    transition: background-color .25s ease-in-out;
+    background-color: #2097fc;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+}
+
+.send-button:hover {
+    background-color: #6EC1E4;
+}
+
+.contact .right {
+    background: url("../images/background-joker-15.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+/* End contact*/
+
+
+/* Scroll to top button */
+
+.scrolltotop-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 50px;
+}
+
+
+/* Footer */
+
+.footer {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0px;
+    background-color: #323232;
+    height: auto;
+}
+
+.title-follow {
+    margin: 20px 0px;
+}
+
+.social-icon-item {
+    padding: 20px 10px;
+}
+
+
+/* End footer */
+
+
+/* End footer */
