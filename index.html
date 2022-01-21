@@ -19,6 +19,25 @@
         .js[data-entrance] {
             visibility: hidden;
         }
+        /*.custom-shape-divider-bottom-1642769678 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        
+        .custom-shape-divider-bottom-1642769678 svg {
+            position: relative;
+            display: block;
+            width: calc(106% + 1.3px);
+            height: 237px;
+        }
+        
+        .custom-shape-divider-bottom-1642769678 .shape-fill {
+            fill: #0099FF;
+        }*/
     </style>
 </head>
 
@@ -28,6 +47,11 @@
     <div class="container main-wrapper">
         <!-- Site header-->
         <div class="row slides" id="sliders">
+            <!--<div class="custom-shape-divider-bottom-1642769678">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>-->
             <div class="site-header">
                 <!--Navigation menu-->
                 <div class="navigation main-menu">
@@ -53,7 +77,8 @@
             <!--Sliders-->
             <div class="slide-text">
                 <h2 class="hi  data-entrance">Hi</h2>
-                <p class="moi">Moi c'est <span class="sam typing-text">Sam</span> <span class="bisselele typing-text">BISSELELE</span>,</p>
+                <p class="moi">Moi c'est <span class="sam typing-text">Sam</span> <span class="bisselele typing-text">BISSELELE</span>,
+                </p>
                 <p class="autre-moi"><span class="joker-code-name typing-text">JOKER CODE</span>.</p>
                 <p class="my-job">Je suis <span class="job typing-text">ingénieur informaticien</span>.
                 </p>
@@ -64,31 +89,36 @@
         <div class="row services row-column-direction " id="services">
             <div class="services-title-area">
                 <h3 class="title-services">Services</h3>
+                <hr>
             </div>
 
             <!--Left column services-->
             <div class="column">
                 <div class="developpement card-column">
                     <h4>Développement informatique</h4>
+                    <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates quod est. Quae nemo incidunt consectetur recusandae corporis veritatis quam sed iusto. Exercitationem voluptatem dolore incidunt atque officiis voluptates
                         doloremque.
                     </p>
                 </div>
                 <div class="network-computer-services card-column">
                     <h4>Réseaux informatiques</h4>
+                    <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, veritatis mollitia. Harum corporis voluptatibus ex laboriosam eveniet dolore earum, maxime aperiam soluta ipsam adipisci saepe vel. Dicta tempora laudantium a.</p>
                 </div>
 
                 <!--Right column services-->
-
                 <div class="bureatique card-column">
-                    <h4>Bureautique</h4>
+                    <h4>Bureautique
+                    </h4>
+                    <hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates quod est. Quae nemo incidunt consectetur recusandae corporis veritatis quam sed iusto. Exercitationem voluptatem dolore incidunt atque officiis voluptates
                         doloremque.
                     </p>
                 </div>
                 <div class="system-administration card-column">
                     <h4>Admnistration système monoposte</h4>
+                    <hr class="spacer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, veritatis mollitia. Harum corporis voluptatibus ex laboriosam eveniet dolore earum, maxime aperiam soluta ipsam adipisci saepe vel. Dicta tempora laudantium a.</p>
                 </div>
             </div>
@@ -129,112 +159,97 @@
                         <!--IT developpment technology list-->
                         <div class="technology-list">
 
-                            <div class="skill-content">
-                                <!--Skill content techonlogy | HTML -->
-                                <div class="html skill ">
-                                    <span class="technology">HTML</span>
-
+                            <!--HTML-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>HTML</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <!--Skill content pourcentage | HTML -->
-                                    <span class="pourcentage">65%</span>
+                                <div class="progress-line html">
+                                    <span></span>
                                 </div>
                             </div>
 
-                            <div class="skill-content">
-                                <div class="css  skill">
-                                    <!--Skill content techonlogy | CSS -->
-
-                                    <span class="technology">CSS</span>
+                            <!--CSS-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>CSS</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <!--Skill content pourcentage | CSS -->
-                                    <span class="pourcentage">55%</span>
-                                </div>
-
-                            </div>
-
-                            <div class="skill-content">
-                                <!--Skill content techonlogy | JavaScript -->
-                                <div class="javascript  skill">
-                                    <span class="technology">Javascript</span>
-                                </div>
-                                <div class="pourcentage-content">
-                                    <!--Skill content pourcentage | JavaScript -->
-                                    <span class="pourcentage">50%</span>
+                                <div class="progress-line css">
+                                    <span></span>
                                 </div>
                             </div>
-
-                            <div class="skill-content">
-                                <!--Skill content techonlogy | jQuery -->
-                                <div class="jquery  skill">
-                                    <span class="technology">jQuery</span>
+                            <!--BootStrap-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>BOOTSRAP</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <!--Skill content pourcentage | jQuery -->
-                                    <span class="pourcentage">35%</span>
+                                <div class="progress-line bootstrap">
+                                    <span></span>
                                 </div>
                             </div>
-
-                            <div class="skill-content">
-                                <!--Skill content techonlogy | BootStrap -->
-
-                                <div class="bootstrap skill ">
-                                    <span class="technology">Bootstrap</span>
-
+                            <!--JAVASCRIPT-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>JAVASCRIPT</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <!--Skill content pourcentage | BootStrap -->
-                                    <span class="pourcentage">35%</span>
+                                <div class="progress-line javascript">
+                                    <span></span>
                                 </div>
                             </div>
-
-                            <div class="skill-content">
-                                <div class="nodejs  skill">
-                                    <span class="technology">Nodejs</span>
-
+                            <!--jQuery-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>JQUERY</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">25%</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-content">
-                                <div class="mysql  skill">
-                                    <span class="technology">MySql</span>
-                                </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">30%</span>
+                                <div class="progress-line jquery">
+                                    <span></span>
                                 </div>
                             </div>
-
-                            <div class="skill-content">
-                                <div class="python  skill">
-                                    <span class="technology">Python</span>
+                            <!--NodeJS-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>NODEJS</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">68%</span>
-                                </div>
-                            </div>
-
-                            <div class="skill-content">
-                                <div class="php  skill">
-                                    <span class="technology">Php</span>
-                                </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">55%</span>
+                                <div class="progress-line nodejs">
+                                    <span></span>
                                 </div>
                             </div>
-
-                            <div class="skill-content">
-                                <div class="wordpress  skill">
-                                    <span class="technology">Wordpress</span>
+                            <!--MYSQL-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>MYSQL</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">60%</span>
+                                <div class="progress-line mysql">
+                                    <span></span>
                                 </div>
                             </div>
-
+                            <!--PHP-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>PHP</span>
+                                </div>
+                                <div class="progress-line php">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!--PYTHON-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>PYTHON</span>
+                                </div>
+                                <div class="progress-line python">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!--WORDPRESS-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>WORDPRESS</span>
+                                </div>
+                                <div class="progress-line wordpress">
+                                    <span></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!--Network container skills-->
@@ -242,20 +257,22 @@
                         <h4 class="title-network-computer ">Network Computer</h4>
                         <div class="technology-list">
                             <!--Network computer technology list-->
-                            <div class="skill-content">
-                                <div class="mikrotik  skill">
-                                    <span class="technology">MIKROTIK</span>
+                            <!--CISCO-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>CISCO</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">50%</span>
+                                <div class="progress-line cisco">
+                                    <span></span>
                                 </div>
                             </div>
-                            <div class="skill-content">
-                                <div class="cisco  skill">
-                                    <span class="technology">CISCO</span>
+                            <!--MIKROTIK-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>MIKROTIK</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">60%</span>
+                                <div class="progress-line mikrotik">
+                                    <span></span>
                                 </div>
                             </div>
                         </div>
@@ -266,44 +283,49 @@
                         <h4 class="title-office-automation ">Office Automation</h4>
                         <!--Office automation technology list-->
                         <div class="technology-list">
-                            <div class="skill-content">
-                                <div class="office-word  skill">
-                                    <span class="technology">Office Word</span>
+                            <!--OFFICE WORD-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>OFFICE WORD</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">80%</span>
-                                </div>
-                            </div>
-                            <div class="skill-content">
-                                <div class="office-excel  skill">
-                                    <span class="technology">Office Excel</span>
-                                </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">60%</span>
+                                <div class="progress-line word">
+                                    <span></span>
                                 </div>
                             </div>
-                            <div class="skill-content">
-                                <div class="office-access  skill">
-                                    <span class="technology">Office Access</span>
+                            <!--OFFICE EXCEL-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>OFFICE EXCEL</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">50%</span>
-                                </div>
-                            </div>
-                            <div class="skill-content">
-                                <div class="office-publisher  skill">
-                                    <span class="technology">Office Publisher</span>
-                                </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">50%</span>
+                                <div class="progress-line excel">
+                                    <span></span>
                                 </div>
                             </div>
-                            <div class="skill-content">
-                                <div class="office-power-point  skill">
-                                    <span class="technology">Office PowerPoint</span>
+                            <!--OFFICE ACCESS-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>OFFICE ACCESS</span>
                                 </div>
-                                <div class="pourcentage-content">
-                                    <span class="pourcentage">50%</span>
+                                <div class="progress-line access">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!--OFFICE PUBLISHER-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>OFFICE PUBLISHER</span>
+                                </div>
+                                <div class="progress-line publisher">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <!--OFFICE POWERPOINT-->
+                            <div class="bar">
+                                <div class="info">
+                                    <span>OFFICE POWERPOINT</span>
+                                </div>
+                                <div class="progress-line powerpoint">
+                                    <span></span>
                                 </div>
                             </div>
 
@@ -387,7 +409,9 @@
                             <label for="message ">Message</label>
                             <br><textarea placeholder="Message "></textarea>
                         </p>
-                        <p><input type="submit " class="send-button "></p>
+                        <p>
+                            <!--<input type="submit " class="send-button " text="Envoyer">-->
+                            <button class="send-button">Envoyer</button></p>
 
                     </form>
                 </div>
@@ -406,11 +430,11 @@
             <div class="footer-content-area ">
                 <h4 class="title-follow ">Follow me on</h4>
                 <div class="social-icons ">
-                    <a href="https://web.facebook.com/samuelyombo.bisselele "><i class="fa fa-facebook social-icon-item "></i><span></span></a>
-                    <a href="https://www.freecodecamp.org/sam-bisselele "><i class="fa fa-free-code-camp social-icon-item "></i><span></span></a>
-                    <a href="https://github.com/sambiss1 "><i class="fa fa-github social-icon-item "></i><span></span></a>
-                    <a href="https://www.instagram.com/sambisselele/ "><i class="fa fa-instagram social-icon-item "></i><span></span></a>
-                    <a href="https://www.linkedin.com/in/sam-bisselele-132292218/ "><i class="fa fa-linkedin social-icon-item "></i><span></span></a>
+                    <a href="https://web.facebook.com/samuelyombo.bisselele " target="_blank"><i class="fa fa-facebook social-icon-item "></i><span></span></a>
+                    <a href="https://www.freecodecamp.org/sam-bisselele " target="_blank"><i class="fa fa-free-code-camp social-icon-item "></i><span></span></a>
+                    <a href="https://github.com/sambiss1 " target="_blank"><i class="fa fa-github social-icon-item "></i><span></span></a>
+                    <a href="https://www.instagram.com/sambisselele/ " target="_blank"><i class="fa fa-instagram social-icon-item "></i><span></span></a>
+                    <a href="https://www.linkedin.com/in/sam-bisselele-132292218/ " target="_blank"><i class="fa fa-linkedin social-icon-item "></i><span></span></a>
                 </div>
                 <div class="footer-copyright-text ">
                     <p>JOKER CODE © 2022. </p>

@@ -44,6 +44,14 @@
 }
 
 
+/* Montserrat */
+
+@font-face {
+    font-family: 'montserrat';
+    src: url("./font-family/montserrat/Montserrat-Light.ttf");
+}
+
+
 /* Mukta */
 
 @font-face {
@@ -133,7 +141,7 @@ body {
     max-width: 1440px;
     font-family: archivo;
     margin: auto;
-    border: .1em solid black;
+    border: .01em solid #ccc;
 }
 
 
@@ -168,7 +176,7 @@ body {
     text-decoration: none;
     position: relative;
     padding: 6px 0;
-    color: #2097fc;
+    color: #fff;
 }
 
 .navbar a:hover {
@@ -237,8 +245,8 @@ ul li {
 
 .column {
     float: left;
-    margin: 20px 0px;
-    padding: 3.1em 0px;
+    margin: 1.2em 0;
+    padding: 3.1em 0;
     height: auto;
     width: 100%;
     white-space: normal;
@@ -280,45 +288,49 @@ ul li {
     height: auto;
     display: block;
     padding: 0;
-    background: url("../images/wave-2.svg");
+    background: #dbdbdb url("../images/wave-8.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: bottom right;
 }
 
 
 /* slides text*/
 
 .slide-text {
-    padding: 50px 50px;
-    font-family: inconsolata;
+    padding: 2em 3em;
+    font-family: archivo;
 }
 
 .hi {
     font-size: 100px;
+}
+
+.hi,
+.sam,
+.bisselele,
+.job,
+.joker-code-name {
     color: #111124;
-    font-family: shadows-in-light;
+    font-family: montserrat;
 }
 
 .moi,
 .autre-moi,
 .my-job {
-    font-size: 38px;
-    color: #EC1F26;
+    font-size: 2rem;
+    color: #fff;
 }
 
 .sam,
 .bisselele,
 .job {
-    font-size: 70px;
-    color: #111124;
-    font-family: shadows-in-light;
+    font-size: 4.2rem;
+    margin: 0;
 }
 
 .joker-code-name {
     font-size: 90px;
-    color: #111124;
-    font-family: shadows-in-light;
 }
 
 
@@ -330,8 +342,6 @@ ul li {
     overflow: hidden;
     border-right: 4px solid #111124;
     animation: typing 5s steps(15) infinite;
-    /*background: red;
-    */
 }
 
 @keyframes typing {
@@ -351,10 +361,10 @@ ul li {
 
 .hire-me-button {
     font-size: 30px;
-    margin: 20px 0px;
+    margin: 1em 0 3em 0;
     padding: 0.6em 1.5em;
-    border-radius: 15px 15px 15px 15px;
-    background: #111124;
+    border-radius: .4em;
+    background: #2097fc;
     color: #fff;
     transition: background 0.4s ease;
 }
@@ -369,6 +379,13 @@ ul li {
 
 
 /* Services row */
+
+.services {
+    background: #dbdbdb;
+    padding: 4em 0;
+}
+
+.services .column {}
 
 .row-column-direction {
     display: flex;
@@ -404,13 +421,20 @@ ul li {
 
 .card-column {
     float: left;
-    box-shadow: 5px 5px 5px 5px #dbdbdb;
-    width: 18%;
-    padding: 10px 25px;
-    margin: 0px 15px;
-    height: 400px;
+    box-shadow: .2rem #ccc;
+    width: 20%;
+    padding: 10px 1em;
+    margin: 0px 1.2em;
+    height: 300px;
     border-radius: 5px 5px 5px 5px;
     font-family: work-sans;
+    background: #fff;
+    text-align: center;
+    transition: transform .2s;
+}
+
+.card-column:hover {
+    transform: scale(1.1);
 }
 
 .card-column>h4 {
@@ -420,6 +444,11 @@ ul li {
     text-align: center;
     height: 50px;
     font-family: work-sans;
+}
+
+hr {
+    color: #000;
+    width: 100%;
 }
 
 .card-column:hover {
@@ -433,7 +462,7 @@ ul li {
 /* About me row */
 
 .about-me {
-    background: url("../images/wave-3.svg") no-repeat;
+    background: #fff url("../images/wave-3.svg") no-repeat;
     background-size: contain;
     background-position: bottom right;
     height: auto;
@@ -467,7 +496,7 @@ ul li {
     bottom: 0;
     left: 0;
     height: 3px;
-    width: 50%;
+    width: 35%;
     background: midnightblue;
 }
 
@@ -480,7 +509,7 @@ ul li {
     height: 50px;
     width: 150px;
     margin: 30px 0;
-    background: #111124;
+    background: #2097fc;
     color: #fff;
     transition: background 0.4s ease;
     border-radius: 10px;
@@ -498,7 +527,7 @@ ul li {
 /* Skills */
 
 .skills {
-    background: url("../images/wave-4.svg") no-repeat;
+    background: #dbdbdb url("../images/wave-4.svg") no-repeat;
     background-size: contain;
     background-position: top right;
     background-attachment: scroll;
@@ -515,13 +544,13 @@ ul li {
 .developpement-informatique,
 .network-computer,
 .office-automation {
-    width: 25%;
+    width: 40%;
     float: left;
-    box-shadow: 2px 2px 2px 2px rgb(15, 15, 43);
+    /*box-shadow: 2px 2px 2px 2px rgb(15, 15, 43);*/
     padding: 10px 25px;
     margin: 20px 20px;
     border-radius: 5px 5px 5px 5px;
-    background: #dbdbdb;
+    background: #fff;
     height: max-content;
 }
 
@@ -532,129 +561,312 @@ ul li {
     margin: 20px 0px;
 }
 
-.skill-content {
+
+/* Skills progress bars */
+
+.bar {
+    margin: 20px 0;
+}
+
+.bar:first-child {
+    margin-top: 0;
+}
+
+.bar .info {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.bar .info span {
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 0;
+    animation: showText1 0.5s 1s linear forwards;
+}
+
+@keyframes showText1 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.bar .progress-line {
+    height: 10px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-.skill {
-    font-size: 18px;
-    padding: 10px 15px;
-    background: red;
-    margin: 10px 0px;
-    color: #fff;
+.bar .progress-line span {
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    left: 0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
-.technology {
-    text-align: left !important;
-    float: left;
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
 }
 
-.pourcentage-content {
-    text-align: right;
-    float: right;
-    margin: 10px 0px;
-    padding: 10px 15px;
-}
 
-.pourcentage {
-    text-align: right;
-    float: right;
-}
+/* Programming technologies */
 
 
 /* It developpment technology */
 
-.html {
-    width: 100%;
-    background-color: #04AA6D;
+
+/* HTML */
+
+.progress-line.html span {
+    width: 70%;
+    background: #04AA6D;
 }
 
-.css {
+.progress-line.html span::after {
+    content: "70%";
+}
+
+
+/* CSS */
+
+.progress-line.css span {
+    width: 60%;
+    background: #0000FF;
+}
+
+.progress-line.css span::after {
+    content: "60%";
+}
+
+
+/* BOOTSTRAP */
+
+.progress-line.bootstrap span {
+    width: 40%;
+    background: #FF7F50;
+}
+
+.progress-line.bootstrap span::after {
+    content: "40%";
+}
+
+
+/* JAVASCRIPT */
+
+.progress-line.javascript span {
     width: 55%;
-    background-color: #0000FF;
+    background: #5F9EA0;
 }
 
-.javascript {
-    width: 50%;
-    background-color: #5F9EA0;
+.progress-line.javascript span::after {
+    content: "55%";
 }
 
-.jquery {
+
+/* JQUERY */
+
+.progress-line.jquery span {
     width: 35%;
-    background-color: #7FFF00;
+    background: #7FFF00;
 }
 
-.bootstrap {
-    width: 35%;
-    background-color: #FF7F50;
+.progress-line.jquery span::after {
+    content: "35%";
 }
 
-.nodejs {
-    width: 25%;
-    background-color: #6495ED;
-}
 
-.mysql {
+/* NODEJS */
+
+.progress-line.nodejs span {
     width: 30%;
-    background-color: #DC143C;
+    background: #6495ED;
 }
 
-.python {
-    width: 68%;
-    background-color: #B8860B;
-}
-
-.php {
-    width: 55%;
-    background-color: #006400;
-}
-
-.wordpress {
-    width: 55%;
-    background-color: #1E90FF;
+.progress-line.nodejs span::after {
+    content: "30%";
 }
 
 
-/* Ntework computer technology */
+/* MySQL */
 
-.mikrotik {
-    width: 50%;
-    background-color: #FFD700;
+.progress-line.mysql span {
+    width: 35%;
+    background: #DC143C;
 }
 
-.cisco {
+.progress-line.mysql span::after {
+    content: "35%";
+}
+
+
+/* PHP */
+
+.progress-line.php span {
+    width: 40%;
+    background: #006400;
+}
+
+.progress-line.php span::after {
+    content: "40%";
+}
+
+
+/* PYTHON */
+
+.progress-line.python span {
+    width: 40%;
+    background: #B8860B;
+}
+
+.progress-line.python span::after {
+    content: "40%";
+}
+
+
+/* WORDPRESS */
+
+.progress-line.wordpress span {
+    width: 75%;
+    background: #1E90FF;
+}
+
+.progress-line.wordpress span::after {
+    content: "75%";
+}
+
+
+/* Network computer technologies */
+
+
+/* CISCO */
+
+.progress-line.cisco span {
     width: 60%;
-    background-color: #008000;
+    background: #DEB887;
+}
+
+.progress-line.cisco span::after {
+    content: "60%";
 }
 
 
-/* Office automation technology */
+/* MIKROTIK */
 
-.office-word {
+.progress-line.mikrotik span {
+    width: 40%;
+    background: #FF7F50;
+}
+
+.progress-line.mikrotik span::after {
+    content: "40%";
+}
+
+
+/* Office Automation technolgies */
+
+
+/* Office Word */
+
+.progress-line.word span {
     width: 80%;
-    background-color: #008000;
+    background: #00FFFF;
 }
 
-.office-excel {
-    width: 60%;
-    background-color: #008000;
+.progress-line.word span::after {
+    content: "80%";
 }
 
-.office-access {
+
+/* Office Excel */
+
+.progress-line.excel span {
+    width: 65%;
+    background: #FF8C00;
+}
+
+.progress-line.excel span::after {
+    content: "65%";
+}
+
+
+/* Office Access */
+
+.progress-line.access span {
     width: 50%;
-    background-color: #008000;
+    background: #8B0000;
 }
 
-.office-publisher {
-    width: 50%;
-    background-color: #008000;
+.progress-line.access span::after {
+    content: "50%";
 }
 
-.office-power-point {
+
+/* Office PUBLISHER */
+
+.progress-line.publisher span {
     width: 50%;
-    background-color: #008000;
+    background: #483D8B;
+}
+
+.progress-line.publisher span::after {
+    content: "50%";
+}
+
+
+/* Office Powerpoint */
+
+.progress-line.powerpoint span {
+    width: 50%;
+    background: #228B22;
+}
+
+.progress-line.powerpoint span::after {
+    content: "50%";
+}
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    animation: showText2 0.5s 1.5s line
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -665,7 +877,7 @@ ul li {
 
 .projects {
     height: auto;
-    background: url("../images/wave-5.svg");
+    background: #fff url("../images/wave-5.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -768,6 +980,10 @@ ul li {
 
 
 /* Contact */
+
+.contact {
+    background: #dbdbdb;
+}
 
 .contact-title-area {
     font-size: 50px;
