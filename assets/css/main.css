@@ -133,7 +133,7 @@ body {
     max-width: 1440px;
     font-family: archivo;
     margin: auto;
-    border: 1px solid black;
+    border: .1em solid black;
 }
 
 
@@ -141,8 +141,7 @@ body {
 
 .site-header {
     width: 100%;
-    max-width: 1200px;
-    /*border: 1px solid #000;*/
+    max-width: 1440px;
     font-family: work-sans !important;
 }
 
@@ -162,13 +161,14 @@ body {
     color: midnightblue;
     font-family: raleway;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navbar a {
     text-decoration: none;
     position: relative;
     padding: 6px 0;
+    color: #2097fc;
 }
 
 .navbar a:hover {
@@ -187,7 +187,7 @@ body {
 }
 
 .navbar a.active {
-    color: #fff;
+    color: #000;
 }
 
 .navbar li a:hover:before {
@@ -213,7 +213,6 @@ ul li {
 
 .site-logo {
     font-family: archivo;
-    border: 1px solid #000;
 }
 
 .site-logo a {
@@ -239,7 +238,7 @@ ul li {
 .column {
     float: left;
     margin: 20px 0px;
-    padding: 50px 0px;
+    padding: 3.1em 0px;
     height: auto;
     width: 100%;
     white-space: normal;
@@ -280,11 +279,11 @@ ul li {
 .slides {
     height: auto;
     display: block;
-    padding: 0px 0px 0px 0px;
-    background: url("../images/background-joker-10.jpg");
+    padding: 0;
+    background: url("../images/wave-2.svg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: center center;
 }
 
 
@@ -305,7 +304,7 @@ ul li {
 .autre-moi,
 .my-job {
     font-size: 38px;
-    color: #fff;
+    color: #EC1F26;
 }
 
 .sam,
@@ -351,9 +350,9 @@ ul li {
 /* Hire me button */
 
 .hire-me-button {
-    font-size: 35px;
+    font-size: 30px;
     margin: 20px 0px;
-    padding: 20px 50px;
+    padding: 0.6em 1.5em;
     border-radius: 15px 15px 15px 15px;
     background: #111124;
     color: #fff;
@@ -433,6 +432,13 @@ ul li {
 
 /* About me row */
 
+.about-me {
+    background: url("../images/wave-3.svg") no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    height: auto;
+}
+
 .about-me-text {
     font-family: work-sans;
 }
@@ -492,10 +498,10 @@ ul li {
 /* Skills */
 
 .skills {
-    background: url("../images/background-joker-3.jpg") no-repeat;
-    background-size: cover;
+    background: url("../images/wave-4.svg") no-repeat;
+    background-size: contain;
+    background-position: top right;
     background-attachment: scroll;
-    background-position: center center;
     height: auto;
 }
 
@@ -511,7 +517,7 @@ ul li {
 .office-automation {
     width: 25%;
     float: left;
-    box-shadow: 5px 5px 5px 5px rgb(15, 15, 43);
+    box-shadow: 2px 2px 2px 2px rgb(15, 15, 43);
     padding: 10px 25px;
     margin: 20px 20px;
     border-radius: 5px 5px 5px 5px;
@@ -657,6 +663,14 @@ ul li {
 
 /* Projects done */
 
+.projects {
+    height: auto;
+    background: url("../images/wave-5.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
 .projects-title-area {
     font-size: 50px;
     text-align: center;
@@ -675,6 +689,81 @@ ul li {
 }
 
 
+/* gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1em;
+}
+
+
+/* Gallery Image */
+
+.gallery_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_item--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery_item--2 {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.gallery_item--3 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.gallery_item--4 {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.gallery_item--5 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 8;
+}
+
+.gallery_item--6 {
+    grid-column-start: 11;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.gallery_item--7 {
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.gallery_item--8 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+
 /* End projects */
 
 
@@ -683,16 +772,16 @@ ul li {
 .contact-title-area {
     font-size: 50px;
     text-align: center;
-    margin: 40px 0px;
+    margin: 1.4em 0;
     font-family: inconsolata;
 }
 
 .title-contact {
-    padding: 30px 0;
+    padding: 0.8em 0;
 }
 
 .contact-text {
-    font-size: 20px;
+    font-size: 0.4em;
     font-family: raleway;
 }
 
@@ -702,26 +791,19 @@ form {
     margin: auto;
     font-family: 'Raleway';
     font-size: 20px;
-    padding: 50px 25px;
+    padding: 2em 1.2em;
 }
 
 input[type="text"],
 input[type="email"],
 select,
 textarea {
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
     border: 1px solid #ccc;
     /* Gray border */
     border-radius: 4px;
     /* Rounded borders */
     box-sizing: border-box;
     /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
     /* Bottom margin */
     resize: vertical;
     /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -729,14 +811,17 @@ textarea {
 
 input {
     width: 100%;
-    height: 50px;
-    padding: 12px 0 12px 12px;
-    margin: 25px 0px;
+    height: 2em;
+    padding: 0.5em 0 0.5em 0.5em;
+    margin: 1.2em 0;
     border-radius: 4px;
 }
 
 textarea {
     height: 200px;
+    width: 100%;
+    padding: 0.5em 0 0.5em 0.5em;
+    margin: 1.2em 0;
 }
 
 .send-button {
@@ -746,19 +831,20 @@ textarea {
     transition: background-color .25s ease-in-out;
     background-color: #2097fc;
     color: white;
-    padding: 8px 12px;
+    padding: 0.5em 1.5em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 80px;
+    width: 5em;
 }
 
 .send-button:hover {
     background-color: #6EC1E4;
+    color: #000;
 }
 
 .contact .right {
-    background: url("../images/background-joker-15.jpg") no-repeat;
+    background: url("../images/background-phone-2.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
@@ -777,6 +863,10 @@ textarea {
     font-size: 50px;
 }
 
+.scrolltotop-button a {
+    color: #2097fc;
+}
+
 
 /* Footer */
 
@@ -790,11 +880,35 @@ textarea {
 }
 
 .title-follow {
-    margin: 20px 0px;
+    margin: .8em 0;
+    font-size: 1.4em;
+}
+
+.social-icons a {
+    color: #2097fc;
+    text-decoration: none;
+    font-size: 1.4em;
 }
 
 .social-icon-item {
-    padding: 20px 10px;
+    padding: 1.1em .5em;
+}
+
+a .fa-facebook {
+    color: #4267B2 !important;
+}
+
+a .fa-free-code-camp,
+a .fa-github {
+    color: #fff;
+}
+
+a .fa-instagram {
+    color: #C32AA3;
+}
+
+a .fa-linkedin {
+    color: #007BB5;
 }
 
 
