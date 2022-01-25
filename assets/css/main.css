@@ -306,7 +306,8 @@ ul li {
     font-size: 6rem;
 }
 
-.hi {
+
+/*.hi {
     animation: movefromleft 0.3s ease-in-out;
     animation-delay: 1000ms;
 }
@@ -318,7 +319,7 @@ ul li {
     100% {
         transform: translateX(50px);
     }
-}
+}*/
 
 .hi,
 .sam,
@@ -413,7 +414,7 @@ ul li {
 .services-title-area {}
 
 .title-services {
-    animation: movetodown 0.3s ease-in-out;
+    /*animation: movetodown 0.3s ease-in-out;*/
     animation-delay: 1000ms;
     font-size: 3.1rem;
     text-align: center;
@@ -484,6 +485,7 @@ hr {
 
 .about-me-text {
     font-family: work-sans;
+    margin: 1rem 0;
 }
 
 .title-about-me {
@@ -566,8 +568,8 @@ hr {
     border-radius: 5px 5px 5px 5px;
     background: #fff;
     height: max-content;
-    transition: none !important;
-    transform: none !important;
+    /*transition: none !important;
+        transform: none !important;*/
 }
 
 .developpement-informatique>h4,

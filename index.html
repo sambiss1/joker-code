@@ -9,6 +9,10 @@
     <!--<link rel="stylesheet" href="./assets/css/font-awesome/fontawesome.min.css">-->
     <link rel="stylesheet" href="./assets/css/font-awesome/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Scroll animations library-->
+    <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
+    <!--Site icon-->
     <link rel="icon" href="./assets/images/joker-code-icon-final-2.png">
     <title>JOKER CODE | Home Page </title>
     <script src="./assets/js/vue/dist/vue.global.js"></script>
@@ -54,11 +58,11 @@
             </div>
             <!--Sliders-->
             <div class="slide-text">
-                <h2 class="hi  data-entrance">Hi</h2>
+                <h2 class="hi" data-aos="fade-right" data-aos-duration="3000">Hi</h2>
                 <p class="moi"> <span class="sam typing-text"><Typewriter title="Moi c'est " :words="['SAM BISSELELE']"> </Typewriter></span>
                 </p>
                 <p class="autre-moi"><span class="joker-code-name typing-text"><Typewriter title=" " :words="['JOKER CODE', ' ']"> </Typewriter></span></p>
-                <p class="my-job">Je suis <span class="job typing-text">ingénieur informaticien</span>.
+                <p class="my-job">Je suis <span class="job typing-text"><Typewriter title=" " :words="['ingenieur informaticien', 'développeur web', 'administrateur système']"> </Typewriter></span>
                 </p>
                 <p><button class="hire-me-button">Hire Me</button></p>
 
@@ -67,7 +71,7 @@
         <!--Services-->
         <div class="row services row-column-direction " id="services">
             <div class="services-title-area">
-                <h3 class="title-services">Services</h3>
+                <h3 class="title-services" data-aos="fade-down" data-aos-duration="3000">Services</h3>
                 <hr>
             </div>
 
@@ -80,8 +84,8 @@
         <div class="row about-me " id="about-me">
 
             <!--Left column about-me-->
-            <div class="column left ">
-                <h3 class="title-about-me ">About Me</h3>
+            <div class="column left">
+                <h3 class="title-about-me" data-aos="fade-right" data-aos-duration="2000">About Me</h3>
 
                 <!--About me text, imported from a VueJS file, by using template-->
                 <about_me></about_me>
@@ -100,140 +104,140 @@
         <div class="row skills  row-column-direction" id="skills">
 
             <div class=" skills-title-area">
-                <h3 class="title-skills ">Skills</h3>
+                <h3 class="title-skills " data-aos="slide-down" data-aos-id="super-duper">Skills</h3>
             </div>
             <!--Column right skills-->
-            <div class="column ">
+            <div class=" column ">
                 <!--Skills container-->
                 <div class="skills-container ">
                     <!--IT Development contianer skills-->
-                    <div class="developpement-informatique card-column">
+                    <div class="developpement-informatique card-column " data-aos="fade-right" data-aos-duration="3000">
                         <h4 class="title-developpement-info ">IT Development</h4>
 
                         <!--IT developpment technology list-->
-                        <div class="technology-list">
+                        <div class="technology-list ">
 
                             <!--HTML-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>HTML</span>
                                 </div>
-                                <div class="progress-line html">
+                                <div class="progress-line html ">
                                     <span></span>
                                 </div>
                             </div>
 
                             <!--CSS-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>CSS</span>
                                 </div>
-                                <div class="progress-line css">
+                                <div class="progress-line css ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--BootStrap-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>BOOTSRAP</span>
                                 </div>
-                                <div class="progress-line bootstrap">
+                                <div class="progress-line bootstrap ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--JAVASCRIPT-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>JAVASCRIPT</span>
                                 </div>
-                                <div class="progress-line javascript">
+                                <div class="progress-line javascript ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--jQuery-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>JQUERY</span>
                                 </div>
-                                <div class="progress-line jquery">
+                                <div class="progress-line jquery ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--NodeJS-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>NODEJS</span>
                                 </div>
-                                <div class="progress-line nodejs">
+                                <div class="progress-line nodejs ">
                                     <span></span>
                                 </div>
                             </div>
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>VUEJS</span>
                                 </div>
-                                <div class="progress-line vuejs">
+                                <div class="progress-line vuejs ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--MYSQL-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>MYSQL</span>
                                 </div>
-                                <div class="progress-line mysql">
+                                <div class="progress-line mysql ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--PHP-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>PHP</span>
                                 </div>
-                                <div class="progress-line php">
+                                <div class="progress-line php ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--PYTHON-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>PYTHON</span>
                                 </div>
-                                <div class="progress-line python">
+                                <div class="progress-line python ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--WORDPRESS-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>WORDPRESS</span>
                                 </div>
-                                <div class="progress-line wordpress">
+                                <div class="progress-line wordpress ">
                                     <span></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--Network container skills-->
-                    <div class="network-computer card-column">
+                    <div class="network-computer card-column " data-aos="fade-down" data-aos-duration="3000">
                         <h4 class="title-network-computer ">Network Computer</h4>
-                        <div class="technology-list">
+                        <div class="technology-list ">
                             <!--Network computer technology list-->
                             <!--CISCO-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>CISCO</span>
                                 </div>
-                                <div class="progress-line cisco">
+                                <div class="progress-line cisco ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--MIKROTIK-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>MIKROTIK</span>
                                 </div>
-                                <div class="progress-line mikrotik">
+                                <div class="progress-line mikrotik ">
                                     <span></span>
                                 </div>
                             </div>
@@ -241,52 +245,52 @@
                     </div>
 
                     <!--Office automation-->
-                    <div class="office-automation card-column ">
+                    <div class="office-automation card-column " data-aos="fade-up" data-aos-duration="3000">
                         <h4 class="title-office-automation ">Office Automation</h4>
                         <!--Office automation technology list-->
-                        <div class="technology-list">
+                        <div class="technology-list ">
                             <!--OFFICE WORD-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>OFFICE WORD</span>
                                 </div>
-                                <div class="progress-line word">
+                                <div class="progress-line word ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--OFFICE EXCEL-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>OFFICE EXCEL</span>
                                 </div>
-                                <div class="progress-line excel">
+                                <div class="progress-line excel ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--OFFICE ACCESS-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>OFFICE ACCESS</span>
                                 </div>
-                                <div class="progress-line access">
+                                <div class="progress-line access ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--OFFICE PUBLISHER-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>OFFICE PUBLISHER</span>
                                 </div>
-                                <div class="progress-line publisher">
+                                <div class="progress-line publisher ">
                                     <span></span>
                                 </div>
                             </div>
                             <!--OFFICE POWERPOINT-->
-                            <div class="bar">
-                                <div class="info">
+                            <div class="bar ">
+                                <div class="info ">
                                     <span>OFFICE POWERPOINT</span>
                                 </div>
-                                <div class="progress-line powerpoint">
+                                <div class="progress-line powerpoint ">
                                     <span></span>
                                 </div>
                             </div>
@@ -297,37 +301,37 @@
             </div>
         </div>
         <!--Projects done row-->
-        <div class="row projects row-column-direction projects-done " id="projects-done">
-            <div class="projects-title-area">
+        <div class="row projects row-column-direction projects-done " id="projects-done ">
+            <div class="projects-title-area ">
                 <h3 class="title-projects-done ">Personnal Gallery</h3>
             </div>
             <!--right column projects-->
-            <div class="column">
+            <div class="column ">
                 <div class="projects-list ">
-                    <div class="gallery">
-                        <figure class="gallery_item gallery_item--1">
-                            <img src="assets/images/joker-6.jpg" class="gallery_img" alt=" Image 1 ">
+                    <div class="gallery ">
+                        <figure class="gallery_item gallery_item--1 ">
+                            <img src="assets/images/joker-6.jpg " class="gallery_img " alt=" Image 1 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--2">
-                            <img src="assets/images/joker-7.jpg" class="gallery_img" alt=" Image 2 ">
+                        <figure class="gallery_item gallery_item--2 ">
+                            <img src="assets/images/joker-7.jpg " class="gallery_img " alt=" Image 2 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--3">
-                            <img src="assets/images/joker-8.jpg" class="gallery_img" alt=" Image 3 ">
+                        <figure class="gallery_item gallery_item--3 ">
+                            <img src="assets/images/joker-8.jpg " class="gallery_img " alt=" Image 3 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--4">
-                            <img src="assets/images/joker-9.jpg" class="gallery_img" alt=" Image 4 ">
+                        <figure class="gallery_item gallery_item--4 ">
+                            <img src="assets/images/joker-9.jpg " class="gallery_img " alt=" Image 4 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--5">
-                            <img src="assets/images/joker-paul-2.jpg" class="gallery_img" alt=" Image 5 ">
+                        <figure class="gallery_item gallery_item--5 ">
+                            <img src="assets/images/joker-paul-2.jpg " class="gallery_img " alt=" Image 5 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--6">
-                            <img src="assets/images/joker-paul-1.jpg" class="gallery_img" alt=" Image 6 ">
+                        <figure class="gallery_item gallery_item--6 ">
+                            <img src="assets/images/joker-paul-1.jpg " class="gallery_img " alt=" Image 6 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--7">
-                            <img src="assets/images/joker-nathan-1.jpg" class="gallery_img" alt=" Image 7 ">
+                        <figure class="gallery_item gallery_item--7 ">
+                            <img src="assets/images/joker-nathan-1.jpg " class="gallery_img " alt=" Image 7 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--8">
-                            <img src="assets/images/joker-10.jpg" class="gallery_img" alt=" Image 8 ">
+                        <figure class="gallery_item gallery_item--8 ">
+                            <img src="assets/images/joker-10.jpg " class="gallery_img " alt=" Image 8 ">
                         </figure>
 
                     </div>
@@ -348,7 +352,7 @@
             </div>
         </div>
         <!--Contact row-->
-        <div class="row contact " id="contact">
+        <div class="row contact " id="contact ">
             <!--Contact content-->
 
             <div class="column left ">
@@ -372,8 +376,8 @@
                             <br><textarea placeholder="Message "></textarea>
                         </p>
                         <p>
-                            <!--<input type="submit " class="send-button " text="Envoyer">-->
-                            <button class="send-button">Envoyer</button></p>
+                            <!--<input type="submit " class="send-button " text="Envoyer ">-->
+                            <button class="send-button ">Envoyer</button></p>
 
                     </form>
                 </div>
@@ -392,11 +396,11 @@
             <div class="footer-content-area ">
                 <h4 class="title-follow ">Follow me on</h4>
                 <div class="social-icons ">
-                    <a href="https://web.facebook.com/samuelyombo.bisselele " target="_blank"><i class="far fa-facebook social-icon-item "></i><span></span></a>
-                    <a href="https://www.freecodecamp.org/sam-bisselele " target="_blank"><i class="far fa-free-code-camp social-icon-item "></i><span></span></a>
-                    <a href="https://github.com/sambiss1 " target="_blank"><i class="far fa-github social-icon-item "></i><span></span></a>
-                    <a href="https://www.instagram.com/sambisselele/ " target="_blank"><i class="far fa-instagram social-icon-item "></i><span></span></a>
-                    <a href="https://www.linkedin.com/in/sam-bisselele-132292218/ " target="_blank"><i class="far fa-linkedin social-icon-item "></i><span></span></a>
+                    <a href="https://web.facebook.com/samuelyombo.bisselele " target="_blank "><i class="far fa-facebook social-icon-item "></i><span></span></a>
+                    <a href="https://www.freecodecamp.org/sam-bisselele " target="_blank "><i class="far fa-free-code-camp social-icon-item "></i><span></span></a>
+                    <a href="https://github.com/sambiss1 " target="_blank "><i class="far fa-github social-icon-item "></i><span></span></a>
+                    <a href="https://www.instagram.com/sambisselele/ " target="_blank "><i class="far fa-instagram social-icon-item "></i><span></span></a>
+                    <a href="https://www.linkedin.com/in/sam-bisselele-132292218/ " target="_blank "><i class="far fa-linkedin social-icon-item "></i><span></span></a>
                 </div>
                 <div class="footer-copyright-text ">
                     <p>{{ site_name }} © 2022. </p>
@@ -406,12 +410,18 @@
 
     </div>
     <!--Import MainFunctions.JS-->
-    <script src="./assets/js/mainFunctions.js"></script>
+    <script src="./assets/js/mainFunctions.js "></script>
 
     <!--Import other functions-->
-    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/functions.js "></script>
+    <!--
+    <script src="https://unpkg.com/aos@next/dist/aos.js "></script>-->
+    <script src="/node_modules/aos/dist/aos.js "></script>
     <script>
-        const mountedApp = app.mount("#container")
+        AOS.init();
+    </script>
+    <script>
+        const mountedApp = app.mount("#container ")
     </script>
 </body>
 
