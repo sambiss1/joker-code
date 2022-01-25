@@ -33,7 +33,7 @@ app.component('services-card', {
     data() {
         return {
             servicesDev: "Conpetion application, site web. Deployement des services web avec l'usage des nouvelles technologies.",
-            servicesNetwork: "Mise en place des réseauyx informatiques LAN pour entreprise et à usage domestique.",
+            servicesNetwork: "Mise en place des réseaux informatiques LAN pour entreprise et à usage domestique.",
             servicesBureautique: "Opérateur de saisie, gestion des documents de bureau ainsi que des outils (Imprimante, scanneur)",
             servicesAdmin: "Installation, mises à jour, mises à niveau des systèmes d'exploitation clients et serveurs. \n Deploiement des services dans un réseau informatique "
         }
@@ -69,7 +69,7 @@ app.component('Typewriter', {
                 <span class="moi">
               {{ title }}
             </span>
-                <span class="text-4xl text-bold text-red-500">
+                <span class="typing-text">
                 {{ displayText.join("") }}
               </span>
             </div>`,
@@ -77,7 +77,7 @@ app.component('Typewriter', {
         title: String,
         speed: {
             type: Number,
-            default: 200
+            default: 400
         },
         deleteSpeed: {
             type: Number,

@@ -288,7 +288,7 @@ ul li {
     height: auto;
     display: block;
     padding: 0;
-    background: #111124 url("../images/wave-8.svg");
+    background: #fff url("../images/wave-8.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -334,7 +334,7 @@ ul li {
 .autre-moi,
 .my-job {
     font-size: 2rem;
-    color: #fff;
+    color: #111124;
 }
 
 .sam,
@@ -380,6 +380,12 @@ ul li {
     margin: 1em 0 3em 0;
     padding: 0.6em 1.5em;
     border-radius: .4em;
+    -moz-border-radius: .4em;
+    -webkit-border-top-left-radius: .4em;
+    -webkit-border-top-right-radius: .4em;
+    -webkit-border-bottom-right-radius: .4em;
+    -webkit-border-bottom-left-radius: .4em;
+    border: 0;
     background: #2097fc;
     color: #fff;
     transition: background 0.4s ease;
@@ -401,8 +407,6 @@ ul li {
     padding: 4em 0;
 }
 
-.services .column {}
-
 .row-column-direction {
     display: flex;
     flex-direction: column;
@@ -411,24 +415,12 @@ ul li {
 
 /* services title area */
 
-.services-title-area {}
-
-.title-services {
-    /*animation: movetodown 0.3s ease-in-out;*/
-    animation-delay: 1000ms;
+.title {
     font-size: 3.1rem;
     text-align: center;
     margin: 40px 0px;
-    font-family: inconsolata;
-}
-
-@keyframes movetodown {
-    0% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(50px);
-    }
+    font-family: montserrat;
+    font-weight: 600;
 }
 
 
@@ -444,7 +436,7 @@ ul li {
     border-radius: 5px 5px 5px 5px;
     font-family: work-sans;
     background: #fff;
-    text-align: center;
+    text-align: justify;
     transition: transform .2s;
 }
 
@@ -489,10 +481,7 @@ hr {
 }
 
 .title-about-me {
-    font-size: 50px;
-    margin: 40px 0px;
-    font-family: inconsolata;
-    position: relative;
+    text-align: left;
 }
 
 .title-about-me:before {
@@ -548,13 +537,6 @@ hr {
     background-position: top right;
     background-attachment: scroll;
     height: auto;
-}
-
-.skills-title-area {
-    font-size: 50px;
-    text-align: center;
-    margin: 40px 0px;
-    font-family: inconsolata;
 }
 
 .developpement-informatique,
@@ -918,13 +900,6 @@ hr {
     background-position: bottom center;
 }
 
-.projects-title-area {
-    font-size: 50px;
-    text-align: center;
-    margin: 40px 0px;
-    font-family: inconsolata;
-}
-
 .projects-list {
     margin: 30px 40px;
 }
@@ -1020,20 +995,14 @@ hr {
     background: #dbdbdb;
 }
 
-.contact-title-area {
-    font-size: 50px;
-    text-align: center;
-    margin: 1.4em 0;
-    font-family: inconsolata;
-}
-
 .title-contact {
     padding: 0.8em 0;
 }
 
 .contact-text {
-    font-size: 0.4em;
+    font-size: 1.4em;
     font-family: raleway;
+    text-align: center;
 }
 
 form {
@@ -1041,7 +1010,7 @@ form {
     display: block;
     margin: auto;
     font-family: 'Raleway';
-    font-size: 20px;
+    font-size: 1.4rem;
     padding: 2em 1.2em;
 }
 
@@ -1095,10 +1064,11 @@ textarea {
 }
 
 .contact .right {
-    background: url("../images/background-phone-2.jpg") no-repeat;
+    background: linear-gradient(0deg, rgba(19, 15, 70, 0.3), #0a021ff8), url("../images/background-phone-2.jpg") no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: scroll;
+    background-blend-mode: unset;
 }
 
 
@@ -1171,6 +1141,9 @@ a .fa-linkedin {
 
 /* Responsive work */
 
+
+/* Media screen of 1440px size*/
+
 @media screen and (max-width: 1440px) {
     /* Container */
     .container {
@@ -1189,7 +1162,6 @@ a .fa-linkedin {
     .autre-moi,
     .my-job {
         font-size: 1.2rem;
-        color: #fff;
     }
     .joker-code-name {
         font-size: 4rem;
@@ -1240,5 +1212,279 @@ a .fa-linkedin {
         width: 100%;
         padding: 0.5em 0 0.5em 0.5em;
         margin: 1.2em 0;
+    }
+    .scrolltotop-button {
+        font-size: 35px;
+    }
+}
+
+
+/* Media screen of 1200px size*/
+
+@media screen and (max-width: 1200px) {
+    /* Container */
+    .container {
+        max-width: 1200px;
+    }
+    /* Sliders - Section 1*/
+    .hi {
+        font-size: 3rem !important;
+    }
+    .sam,
+    .bisselele,
+    .job {
+        font-size: 2.5rem;
+    }
+    .moi,
+    .autre-moi,
+    .my-job {
+        font-size: 1.2rem;
+    }
+    .joker-code-name {
+        font-size: 3.5rem;
+    }
+    .hire-me-button {
+        font-size: 1.4rem;
+        margin: 1em 0 3em 0;
+        padding: 0.4em 1em;
+        border: .1rem solid #ccc;
+    }
+    /* Section services */
+    .services {
+        padding: 2em 0;
+    }
+    .services .column {
+        display: flex;
+        flex-direction: row;
+    }
+    .title {
+        font-size: 2.4rem;
+        margin: 40px 0px;
+    }
+    /* About me Section  */
+    .about-me {
+        padding: 0;
+    }
+    /* Contact section */
+    .contact-title-area {
+        margin: .8em 0;
+    }
+    form {
+        padding: 1em 0;
+        font-size: 1rem;
+    }
+    input {
+        width: 100%;
+        height: 1em;
+        padding: 0.5em 0 0.5em 0.5em;
+        margin: 1.2em 0;
+        border-radius: 4px;
+    }
+    textarea {
+        height: 150px;
+        width: 100%;
+        padding: 0.5em 0 0.5em 0.5em;
+        margin: 1.2em 0;
+    }
+    .scrolltotop-button {
+        font-size: 35px;
+    }
+}
+
+
+/* Media screen of 1024px size*/
+
+@media screen and (max-width: 1024px) {
+    /* Container */
+    /*.container {
+        max-width: 1200px;
+    }*/
+    /* Sliders - Section 1*/
+    .hi {
+        font-size: 2.8rem;
+    }
+    .sam,
+    .bisselele,
+    .job {
+        font-size: 2.4rem;
+    }
+    .moi,
+    .autre-moi,
+    .my-job {
+        font-size: .8rem;
+    }
+    .joker-code-name {
+        font-size: 2.8rem;
+    }
+    .hire-me-button {
+        font-size: 1.2rem;
+        margin: 1em 0 3em 0;
+        padding: 0.6em 1.5em;
+        border: .1rem solid #ccc;
+    }
+    /* Section services */
+    .services {
+        padding: 2em 0;
+    }
+    .services .column {
+        display: grid !important;
+        /*grid-template-areas: repeat(2, 1fr);*/
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-template-rows: auto auto;
+        width: 100%;
+    }
+    .title {
+        font-size: 2rem;
+        margin: 20px 0px;
+    }
+    /* Card column */
+    .column-services .card-column {
+        float: none !important;
+        box-shadow: .2rem #ccc;
+        width: 80% !important;
+        padding: .8 1em;
+        margin: 0 1.5em !important;
+        height: auto;
+        border-radius: 5px 5px 5px 5px;
+        font-family: work-sans;
+        background: #fff;
+        text-align: justify;
+    }
+    /* About me Section  */
+    .about-me {
+        padding: 0;
+    }
+    /* Contact section */
+    .contact-title-area {
+        margin: .8em 0;
+    }
+    form {
+        padding: 1em 0;
+    }
+    input {
+        width: 100%;
+        height: 1.6em;
+        padding: 0.5em 0 0.5em 0.5em;
+        margin: 1.2em 0;
+        border-radius: 4px;
+    }
+    textarea {
+        height: 200px;
+        width: 100%;
+        padding: 0.5em 0 0.5em 0.5em;
+        margin: 1.2em 0;
+    }
+    .scrolltotop-button {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* Container */
+    .container {
+        max-width: 768px;
+    }
+    /* Sliders - Section 1*/
+    .hi {
+        font-size: 2.8rem;
+    }
+    .sam,
+    .bisselele,
+    .job {
+        font-size: 2.4rem;
+    }
+    .moi,
+    .autre-moi,
+    .my-job {
+        font-size: .8rem;
+    }
+    .joker-code-name {
+        font-size: 2.8rem;
+    }
+    .hire-me-button {
+        font-size: 1.2rem;
+        margin: 1em 0 3em 0;
+        padding: 0.6em 1.5em;
+        border: .1rem solid #ccc;
+    }
+    /* Section services */
+    .services {
+        padding: 2em 0;
+    }
+    .services .column {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+        /*grid-template-areas: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        grid-template-rows: auto auto;*/
+        width: 100%;
+    }
+    .title {
+        font-size: 2rem;
+        margin: 20px 0px;
+    }
+    /* Card column */
+    .column-services .card-column {
+        float: none !important;
+        box-shadow: .2rem #ccc;
+        width: 90% !important;
+        padding: .8 1em;
+        margin: auto !important;
+        height: auto;
+        border-radius: 5px 5px 5px 5px;
+        font-family: work-sans;
+        background: #fff;
+        text-align: justify;
+    }
+    /* About me Section  */
+    .about-me {
+        padding: 0;
+    }
+    /* Skills section */
+    .developpement-informatique,
+    .network-computer,
+    .office-automation {
+        width: 80%;
+        float: left;
+        /*box-shadow: 2px 2px 2px 2px rgb(15, 15, 43);*/
+        padding: 10px 25px;
+        margin: 2rem 2rem !important;
+        border-radius: 5px 5px 5px 5px;
+        background: #fff;
+        height: max-content;
+        /*transition: none !important;
+        transform: none !important;*/
+    }
+    .developpement-informatique>h4,
+    .network-computer>h4,
+    .office-automation>h4 {
+        font-size: 25px;
+        margin: 20px 0px;
+    }
+    /* Contact section */
+    .contact-title-area {
+        margin: .8em 0;
+    }
+    form {
+        padding: 1em 0;
+    }
+    input {
+        width: 100%;
+        height: 1.6em;
+        padding: 0.5em 0 0.5em 0.5em;
+        margin: 1.2em 0;
+        border-radius: 4px;
+    }
+    textarea {
+        height: 200px;
+        width: 100%;
+        padding: 0.5em 0 0.5em 0.5em;
+        margin: 1.2em 0;
+    }
+    .scrolltotop-button {
+        font-size: 35px;
     }
 }

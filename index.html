@@ -50,7 +50,7 @@
                             <li class="menu-item 2"><a href="#services">Service</a></li>
                             <li class="menu-item 3"><a href="#about-me">About</a></li>
                             <li class="menu-item 4"><a href="#skills">Skills</a></li>
-                            <li class="menu-item 5"><a href="#projects-done">Projects</a></li>
+                            <li class="menu-item 5"><a href="#projects-done">Gallery</a></li>
                             <li class="menu-item 4"><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -59,7 +59,7 @@
             <!--Sliders-->
             <div class="slide-text">
                 <h2 class="hi" data-aos="fade-right" data-aos-duration="3000">Hi</h2>
-                <p class="moi"> <span class="sam typing-text"><Typewriter title="Moi c'est " :words="['SAM BISSELELE']"> </Typewriter></span>
+                <p class="moi"> <span class="sam bisselele typing-text"><Typewriter title="Moi c'est " :words="['SAM BISSELELE']"> </Typewriter></span>
                 </p>
                 <p class="autre-moi"><span class="joker-code-name typing-text"><Typewriter title=" " :words="['JOKER CODE', ' ']"> </Typewriter></span></p>
                 <p class="my-job">Je suis <span class="job typing-text"><Typewriter title=" " :words="['ingenieur informaticien', 'développeur web', 'administrateur système']"> </Typewriter></span>
@@ -71,12 +71,12 @@
         <!--Services-->
         <div class="row services row-column-direction " id="services">
             <div class="services-title-area">
-                <h3 class="title-services" data-aos="fade-down" data-aos-duration="3000">Services</h3>
+                <h3 class="title-services title" data-aos="fade-down" data-aos-duration="3000">Services</h3>
                 <hr>
             </div>
 
             <!--Left column services-->
-            <div class="column">
+            <div class="column column-services">
                 <services-card></services-card>
             </div>
         </div>
@@ -85,16 +85,18 @@
 
             <!--Left column about-me-->
             <div class="column left">
-                <h3 class="title-about-me" data-aos="fade-right" data-aos-duration="2000">About Me</h3>
+                <h3 class="title-about-me title" data-aos="fade-right" data-aos-duration="2000">About Me</h3>
 
                 <!--About me text, imported from a VueJS file, by using template-->
-                <about_me></about_me>
-
+                <div data-aos="fade-right" data-aos-duration="2000">
+                    <about_me>
+                    </about_me>
+                </div>
                 <!---->
-                <button class="button-see-more ">See More...</button>
+                <button class="button-see-more" data-aos="fade-right" data-aos-duration="2000">See More...</button>
             </div>
             <!--Right column about-->
-            <div class="column right image-about-me ">
+            <div class="column right image-about-me " data-aos="fade-left" data-aos-duration="2000">
                 <div class="image-me ">
                     <img src="assets/images/joker-9.jpg " class="me " alt="joker-image ">
                 </div>
@@ -103,11 +105,11 @@
         <!--Skills row-->
         <div class="row skills  row-column-direction" id="skills">
 
-            <div class=" skills-title-area">
-                <h3 class="title-skills " data-aos="slide-down" data-aos-id="super-duper">Skills</h3>
+            <div class="skills-title-area">
+                <h3 class="title-skills title" data-aos="slide-down" data-aos-id="super-duper">Skills</h3>
             </div>
             <!--Column right skills-->
-            <div class=" column ">
+            <div class="column">
                 <!--Skills container-->
                 <div class="skills-container ">
                     <!--IT Development contianer skills-->
@@ -301,36 +303,36 @@
             </div>
         </div>
         <!--Projects done row-->
-        <div class="row projects row-column-direction projects-done " id="projects-done ">
+        <div class="row projects row-column-direction projects-done " id="projects-done">
             <div class="projects-title-area ">
-                <h3 class="title-projects-done ">Personnal Gallery</h3>
+                <h3 class="title-projects-done title">Personnal Gallery</h3>
             </div>
             <!--right column projects-->
             <div class="column ">
                 <div class="projects-list ">
                     <div class="gallery ">
-                        <figure class="gallery_item gallery_item--1 ">
+                        <figure class="gallery_item gallery_item--1 " data-aos="fade-right" data-aos-duration="3000">
                             <img src="assets/images/joker-6.jpg " class="gallery_img " alt=" Image 1 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--2 ">
+                        <figure class="gallery_item gallery_item--2 " data-aos="slide-down" data-aos-duration="3000">
                             <img src="assets/images/joker-7.jpg " class="gallery_img " alt=" Image 2 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--3 ">
+                        <figure class="gallery_item gallery_item--3 " data-aos="flip-left" data-aos-duration="3000">
                             <img src="assets/images/joker-8.jpg " class="gallery_img " alt=" Image 3 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--4 ">
+                        <figure class="gallery_item gallery_item--4 " data-aos="slide-up" data-aos-duration="3000">
                             <img src="assets/images/joker-9.jpg " class="gallery_img " alt=" Image 4 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--5 ">
+                        <figure class="gallery_item gallery_item--5 " data-aos="fade-right" data-aos-duration="3000">
                             <img src="assets/images/joker-paul-2.jpg " class="gallery_img " alt=" Image 5 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--6 ">
+                        <figure class="gallery_item gallery_item--6 " data-aos="slide-left" data-aos-duration="3000">
                             <img src="assets/images/joker-paul-1.jpg " class="gallery_img " alt=" Image 6 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--7 ">
+                        <figure class="gallery_item gallery_item--7 " data-aos="fade-right" data-aos-duration="3000">
                             <img src="assets/images/joker-nathan-1.jpg " class="gallery_img " alt=" Image 7 ">
                         </figure>
-                        <figure class="gallery_item gallery_item--8 ">
+                        <figure class="gallery_item gallery_item--8 " data-aos="flip-right" data-aos-duration="3000">
                             <img src="assets/images/joker-10.jpg " class="gallery_img " alt=" Image 8 ">
                         </figure>
 
@@ -357,8 +359,8 @@
 
             <div class="column left ">
                 <div class="contact-title-area ">
-                    <h3 class="title-contact ">Hire me</h3>
-                    <p class="contact-text ">Laissez-moi un message, si vous avez besoin de moi.</p>
+                    <h3 class="title-contact title">Hire me</h3>
+                    <p class="contact-text ">Laissez-moi un message, si vous avez besoin de mes services.</p>
                 </div>
                 <div class="contact-form ">
                     <form action="submit " method=" ">
@@ -387,8 +389,8 @@
             </div>
 
         </div>
-        <div class="scrolltotop-button ">
-            <a href="# "><i class="far fa-arrow-circle-up "></i></a>
+        <div class="scrolltotop-button">
+            <a href="#"><i class="far fa-arrow-circle-up"></i></a>
         </div>
         <!--Footer-->
         <div class="row footer " id="footer ">
