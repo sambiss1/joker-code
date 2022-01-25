@@ -12,4 +12,6 @@ With that technology :
   
 We gotta add others features with JavaScript Frameworks to make site dynamic.
 
+In our last commit, we have add feature with VueJS.
+
 Thanks.
