@@ -7,27 +7,29 @@ app.component('services-card', {
         `<div class="developpement card-column" data-aos="fade-right" data-aos-duration="3000">
         <h4>Développement informatique</h4>
         <hr>
-        <p> {{ servicesDev }}
-        </p>
+        <p><i class="fas fa-code icon-services"></i></p>
+        <p class="services-resume"> {{ servicesDev }} </p>
     </div>
     <div class="network-computer-services card-column" data-aos="fade-down" data-aos-duration="3000">
         <h4>Réseaux informatiques</h4>
         <hr>
-        <p> {{ servicesNetwork }}</p>
+        <p><i class="fas fa-server icon-services"></i></p>
+        <p class="services-resume"> {{ servicesNetwork }}</p>
     </div>
 
     <!--Right column services-->
     <div class="bureatique card-column" data-aos="fade-up" data-aos-duration="3000">
-        <h4>Bureautique
-        </h4>
+        <h4>Bureautique</h4>
         <hr>
-        <p>{{ servicesBureautique }}
+        <p><i class="fas fa-desktop icon-services"></i></p>
+        <p class="services-resume">{{ servicesBureautique }}
         </p>
     </div>
     <div class="system-administration card-column" data-aos="fade-left" data-aos-duration="3000">
         <h4>Admnistration système monoposte</h4>
         <hr class="spacer">
-        <p>{{ servicesAdmin }}</p>
+        <p><i class="fas fa-terminal icon-services"></i></p>
+        <p class="services-resume">{{ servicesAdmin }}</p>
     </div>`,
 
     data() {

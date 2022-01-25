@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Comptabible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/main.css">
     <!--<link rel="stylesheet" href="./assets/css/font-awesome/fontawesome.min.css">-->
-    <link rel="stylesheet" href="./assets/css/font-awesome/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="./assets/css/font-awesome/all.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.css" crossorigin="anonymous">
 
     <!--Scroll animations library-->
     <link rel="stylesheet" href="/node_modules/aos/dist/aos.css" />
@@ -32,31 +32,34 @@
     <!--Page container-->
     <div class="container main-wrapper" id="container">
         <!-- Site header-->
-        <div class="row slides" id="sliders">
 
-            <div class="site-header">
-                <!--Navigation menu-->
-                <div class="navigation main-menu">
-                    <!--Site logo-->
-                    <div class="site-logo">
-                        <a href="index.html"><img src="./assets/images/logo-joker-final.png" alt="site-logo-joker-code" width=150 class="logo-image"></a>
-                        <!--<img src="./assets/images/joker-code-icon.png" alt="site-logo-joker-code" width=100>-->
-                    </div>
-                    <!--Navigation bar-->
-                    <div class="navbar main-menu-content">
-                        <!--Menu items-->
-                        <ul class="menu-items">
-                            <li class="menu-item 1 "><a href="index.html" class="active">Home</a></li>
-                            <li class="menu-item 2"><a href="#services">Service</a></li>
-                            <li class="menu-item 3"><a href="#about-me">About</a></li>
-                            <li class="menu-item 4"><a href="#skills">Skills</a></li>
-                            <li class="menu-item 5"><a href="#projects-done">Gallery</a></li>
-                            <li class="menu-item 4"><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
+        <header class="site-header">
+            <!--Navigation menu-->
+            <nav class="navigation main-menu">
+                <input type="checkbox" id="check">
+                <!--Site logo-->
+                <div class="site-logo">
+                    <a href="index.html"><img src="./assets/images/logo-joker-final.png" alt="site-logo-joker-code" width=150 class="logo-image"></a>
+                    <!--<img src="./assets/images/joker-code-icon.png" alt="site-logo-joker-code" width=100>-->
                 </div>
-            </div>
-            <!--Sliders-->
+                <!--Navigation bar-->
+                <!--<div class="navbar main-menu-content">-->
+                <!--Menu items-->
+                <ul class="menu-items">
+                    <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
+                    <li class="menu-item 1 "><a href="index.html" class="active">Home</a></li>
+                    <li class="menu-item 2"><a href="#services">Service</a></li>
+                    <li class="menu-item 3"><a href="#about-me">About</a></li>
+                    <li class="menu-item 4"><a href="#skills">Skills</a></li>
+                    <li class="menu-item 5"><a href="#projects-done">Gallery</a></li>
+                    <li class="menu-item 4"><a href="#contact">Contact</a></li>
+                </ul>
+                <label class="button bars" for="check"><i class="fas fa-bars"></i></label>
+                <!--</div>-->
+            </nav>
+        </header>
+        <!--Sliders-->
+        <div class="row slides" id="sliders">
             <div class="slide-text">
                 <h2 class="hi" data-aos="fade-right" data-aos-duration="3000">Hi</h2>
                 <p class="moi"> <span class="sam bisselele typing-text"><Typewriter title="Moi c'est " :words="['SAM BISSELELE']"> </Typewriter></span>
@@ -68,6 +71,7 @@
 
             </div>
         </div>
+
         <!--Services-->
         <div class="row services row-column-direction " id="services">
             <div class="services-title-area">
@@ -97,7 +101,7 @@
             </div>
             <!--Right column about-->
             <div class="column right image-about-me " data-aos="fade-left" data-aos-duration="2000">
-                <div class="image-me ">
+                <div class="image-me">
                     <img src="assets/images/joker-9.jpg " class="me " alt="joker-image ">
                 </div>
             </div>
@@ -312,7 +316,7 @@
                 <div class="projects-list ">
                     <div class="gallery ">
                         <figure class="gallery_item gallery_item--1 " data-aos="fade-right" data-aos-duration="3000">
-                            <img src="assets/images/joker-6.jpg " class="gallery_img " alt=" Image 1 ">
+                            <img src="assets/images/joker-5.jpg " class="gallery_img " alt=" Image 1 ">
                         </figure>
                         <figure class="gallery_item gallery_item--2 " data-aos="slide-down" data-aos-duration="3000">
                             <img src="assets/images/joker-7.jpg " class="gallery_img " alt=" Image 2 ">
@@ -321,7 +325,7 @@
                             <img src="assets/images/joker-8.jpg " class="gallery_img " alt=" Image 3 ">
                         </figure>
                         <figure class="gallery_item gallery_item--4 " data-aos="slide-up" data-aos-duration="3000">
-                            <img src="assets/images/joker-9.jpg " class="gallery_img " alt=" Image 4 ">
+                            <img src="assets/images/joker-6.jpg " class="gallery_img " alt=" Image 4 ">
                         </figure>
                         <figure class="gallery_item gallery_item--5 " data-aos="fade-right" data-aos-duration="3000">
                             <img src="assets/images/joker-paul-2.jpg " class="gallery_img " alt=" Image 5 ">
@@ -337,18 +341,7 @@
                         </figure>
 
                     </div>
-                    <!--<div class="ava projects-item ">
-                        <p><img src="assets/images/Logo-AVA.png " width=150>
-                            <br>Agence Vigile Africa</p>
-                    </div>
-                    <div class="coreasofts projects-item ">
-                        <p><img src="./assets/images/LOGO COREASOFTS-02.png " width=150>
-                            <br>COREASOFTS</p>
-                    </div>
-                    <div class=" gfam projects-item ">
-                        <p><img src="./assets/images/Logo-GF.png " width=150>
-                            <br>G-FAM</p>
-                    </div>-->
+
                 </div>
 
             </div>
@@ -378,9 +371,7 @@
                             <br><textarea placeholder="Message "></textarea>
                         </p>
                         <p>
-                            <!--<input type="submit " class="send-button " text="Envoyer ">-->
                             <button class="send-button ">Envoyer</button></p>
-
                     </form>
                 </div>
             </div>

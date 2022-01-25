@@ -138,7 +138,6 @@ body {
 /* contaner */
 
 .container {
-    max-width: 1440px;
     font-family: archivo;
     margin: auto;
     border: .01em solid #ccc;
@@ -149,8 +148,8 @@ body {
 
 .site-header {
     width: 100%;
-    max-width: 1440px;
     font-family: work-sans !important;
+    z-index: 12;
 }
 
 
@@ -162,28 +161,32 @@ body {
     padding: 30px 25px;
 }
 
+#check {
+    display: none;
+}
+
 
 /* Navigation bar */
 
-.navbar ul {
+.navigation ul {
     color: midnightblue;
     font-family: raleway;
     display: flex;
     justify-content: space-between;
 }
 
-.navbar a {
+.navigation a {
     text-decoration: none;
     position: relative;
     padding: 6px 0;
-    color: #fff;
+    color: #000;
 }
 
-.navbar a:hover {
+.navigation a:hover {
     color: #003;
 }
 
-.navbar li a:before {
+.navigation li a:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -194,11 +197,11 @@ body {
     transition: all 0.4s ease;
 }
 
-.navbar a.active {
+.navigation a.active {
     color: #000;
 }
 
-.navbar li a:hover:before {
+.navigation li a:hover:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -208,12 +211,16 @@ body {
     background: midnightblue;
 }
 
-.navbar li {
+.navigation li {
     padding: 0px 25px;
 }
 
 ul li {
     list-style: none;
+}
+
+label.button {
+    display: none;
 }
 
 
@@ -285,13 +292,14 @@ ul li {
 /* Slides */
 
 .slides {
-    height: auto;
+    height: 800px;
     display: block;
     padding: 0;
     background: #fff url("../images/wave-8.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom right;
+    z-index: 1;
 }
 
 
@@ -505,9 +513,9 @@ hr {
     background: midnightblue;
 }
 
-.image-me,
-.me {
+.image-me img {
     width: 100%;
+    height: 100%;
 }
 
 .button-see-more {
@@ -544,14 +552,11 @@ hr {
 .office-automation {
     width: 40%;
     float: left;
-    /*box-shadow: 2px 2px 2px 2px rgb(15, 15, 43);*/
     padding: 10px 25px;
     margin: 20px 20px;
     border-radius: 5px 5px 5px 5px;
     background: #fff;
-    height: max-content;
-    /*transition: none !important;
-        transform: none !important;*/
+    height: fit-content;
 }
 
 .developpement-informatique>h4,
@@ -1145,10 +1150,10 @@ a .fa-linkedin {
 /* Media screen of 1440px size*/
 
 @media screen and (max-width: 1440px) {
-    /* Container */
+    /* Container 
     .container {
         max-width: 1200px;
-    }
+}*/
     /* Sliders - Section 1*/
     .hi {
         font-size: 4rem;
@@ -1222,10 +1227,10 @@ a .fa-linkedin {
 /* Media screen of 1200px size*/
 
 @media screen and (max-width: 1200px) {
-    /* Container */
+    /* Container 
     .container {
         max-width: 1200px;
-    }
+    }*/
     /* Sliders - Section 1*/
     .hi {
         font-size: 3rem !important;
@@ -1380,19 +1385,102 @@ a .fa-linkedin {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    /* Container */
+@media screen and (max-width: 768px) {
+    /* Container 
+    
     .container {
-        max-width: 768px;
+        max-width: auto !important;
+    }*/
+    /* row */
+    .row {
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+    /* Column */
+    .column {
+        float: none !important;
+        margin: 0;
+        padding: 3.1em 0;
+        height: auto;
+        width: 100%;
+        white-space: normal;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Left and Right column */
+    .left,
+    .right {
+        width: 100%;
+        padding: 50px 0;
+        float: left;
+    }
+    .left,
+    .right {
+        margin: 0;
     }
     /* Sliders - Section 1*/
+    /* Responsive NAvigation Bar */
+    .navigation ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        padding-top: 45px;
+        height: 100%;
+        background: #111124;
+        z-index: 10;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    .navigation ul a {
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 1.8rem 0 0 0;
+        color: #fff;
+    }
+    label.button {
+        z-index: 12;
+        font-size: 1.8rem;
+        z-index: 99 !important;
+        color: #EC1F26;
+    }
+    label.cancel {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+    }
+    label.bars {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+    }
+    #check:checked~label.bars {
+        display: none;
+    }
+    #check:checked~ul label.cancel {
+        display: block;
+    }
+    #check:checked~ul {
+        left: 0;
+        transition: all 0.3s ease;
+    }
     .hi {
         font-size: 2.8rem;
     }
     .sam,
     .bisselele,
     .job {
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
     .moi,
     .autre-moi,
@@ -1416,10 +1504,6 @@ a .fa-linkedin {
         display: flex !important;
         flex-direction: column !important;
         justify-content: center;
-        /*grid-template-areas: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-        grid-template-rows: auto auto;*/
         width: 100%;
     }
     .title {
@@ -1430,18 +1514,35 @@ a .fa-linkedin {
     .column-services .card-column {
         float: none !important;
         box-shadow: .2rem #ccc;
-        width: 90% !important;
+        width: 60% !important;
         padding: .8 1em;
         margin: auto !important;
-        height: auto;
+        height: fit-content;
         border-radius: 5px 5px 5px 5px;
         font-family: work-sans;
         background: #fff;
-        text-align: justify;
+        text-align: center;
+    }
+    /* Icones services */
+    .column-services .card-column .icon-services {
+        font-size: 50px;
+        margin: .4em 0;
     }
     /* About me Section  */
-    .about-me {
-        padding: 0;
+    .about-me,
+    .contact {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .about-me .left,
+    .about-me .right,
+    .contact .left,
+    .contact .right {
+        padding: 0 50px 0 0;
+    }
+    .image-me img {
+        width: 90%;
+        margin: auto;
     }
     /* Skills section */
     .developpement-informatique,
@@ -1470,6 +1571,7 @@ a .fa-linkedin {
     }
     form {
         padding: 1em 0;
+        margin: 0;
     }
     input {
         width: 100%;
