@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1.0">
     <meta http-equiv="X-UA-Comptabible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/font-awesome/fontawesome.min.css">
+    <!--<link rel="stylesheet" href="./assets/css/font-awesome/fontawesome.min.css">-->
+    <link rel="stylesheet" href="./assets/css/font-awesome/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./assets/images/joker-code-icon-final-2.png">
     <title>JOKER CODE | Home Page </title>
-    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/vue/dist/vue.global.js"></script>
     <scirpt src="assets/js/scroll-entrance-librairy/dist/scroll-entrance.js"></scirpt>
 
     <style>
@@ -19,39 +20,16 @@
         .js[data-entrance] {
             visibility: hidden;
         }
-        /*.custom-shape-divider-bottom-1642769678 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-        
-        .custom-shape-divider-bottom-1642769678 svg {
-            position: relative;
-            display: block;
-            width: calc(106% + 1.3px);
-            height: 237px;
-        }
-        
-        .custom-shape-divider-bottom-1642769678 .shape-fill {
-            fill: #0099FF;
-        }*/
     </style>
 </head>
 
 <body>
     <!--Page body-->
     <!--Page container-->
-    <div class="container main-wrapper">
+    <div class="container main-wrapper" id="container">
         <!-- Site header-->
         <div class="row slides" id="sliders">
-            <!--<div class="custom-shape-divider-bottom-1642769678">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
-            </div>-->
+
             <div class="site-header">
                 <!--Navigation menu-->
                 <div class="navigation main-menu">
@@ -77,12 +55,13 @@
             <!--Sliders-->
             <div class="slide-text">
                 <h2 class="hi  data-entrance">Hi</h2>
-                <p class="moi">Moi c'est <span class="sam typing-text">Sam</span> <span class="bisselele typing-text">BISSELELE</span>,
+                <p class="moi"> <span class="sam typing-text"><Typewriter title="Moi c'est " :words="['SAM BISSELELE']"> </Typewriter></span>
                 </p>
-                <p class="autre-moi"><span class="joker-code-name typing-text">JOKER CODE</span>.</p>
+                <p class="autre-moi"><span class="joker-code-name typing-text"><Typewriter title=" " :words="['JOKER CODE', ' ']"> </Typewriter></span></p>
                 <p class="my-job">Je suis <span class="job typing-text">ingénieur informaticien</span>.
                 </p>
                 <p><button class="hire-me-button">Hire Me</button></p>
+
             </div>
         </div>
         <!--Services-->
@@ -94,33 +73,7 @@
 
             <!--Left column services-->
             <div class="column">
-                <div class="developpement card-column">
-                    <h4>Développement informatique</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates quod est. Quae nemo incidunt consectetur recusandae corporis veritatis quam sed iusto. Exercitationem voluptatem dolore incidunt atque officiis voluptates
-                        doloremque.
-                    </p>
-                </div>
-                <div class="network-computer-services card-column">
-                    <h4>Réseaux informatiques</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, veritatis mollitia. Harum corporis voluptatibus ex laboriosam eveniet dolore earum, maxime aperiam soluta ipsam adipisci saepe vel. Dicta tempora laudantium a.</p>
-                </div>
-
-                <!--Right column services-->
-                <div class="bureatique card-column">
-                    <h4>Bureautique
-                    </h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates quod est. Quae nemo incidunt consectetur recusandae corporis veritatis quam sed iusto. Exercitationem voluptatem dolore incidunt atque officiis voluptates
-                        doloremque.
-                    </p>
-                </div>
-                <div class="system-administration card-column">
-                    <h4>Admnistration système monoposte</h4>
-                    <hr class="spacer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, veritatis mollitia. Harum corporis voluptatibus ex laboriosam eveniet dolore earum, maxime aperiam soluta ipsam adipisci saepe vel. Dicta tempora laudantium a.</p>
-                </div>
+                <services-card></services-card>
             </div>
         </div>
         <!--Row about me-->
@@ -129,10 +82,11 @@
             <!--Left column about-me-->
             <div class="column left ">
                 <h3 class="title-about-me ">About Me</h3>
-                <p class="about-me-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo cumque id iste magnam praesentium sit dolorem quidem ad optio placeat ducimus, officiis ea asperiores aliquam, rerum aliquid vitae impedit.</p>
-                <p class="about-me-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam tenetur molestias perspiciatis laborum at repellat quis magni natus, id ipsa animi modi laboriosam vitae distinctio numquam voluptatibus voluptate quaerat. Perspiciatis.</p>
-                <p class="about-me-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo cumque id iste magnam praesentium sit dolorem quidem ad optio placeat ducimus, officiis ea asperiores aliquam, rerum aliquid vitae impedit.</p>
-                <p class="about-me-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam tenetur molestias perspiciatis laborum at repellat quis magni natus, id ipsa animi modi laboriosam vitae distinctio numquam voluptatibus voluptate quaerat. Perspiciatis.</p>
+
+                <!--About me text, imported from a VueJS file, by using template-->
+                <about_me></about_me>
+
+                <!---->
                 <button class="button-see-more ">See More...</button>
             </div>
             <!--Right column about-->
@@ -211,6 +165,14 @@
                                     <span>NODEJS</span>
                                 </div>
                                 <div class="progress-line nodejs">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="bar">
+                                <div class="info">
+                                    <span>VUEJS</span>
+                                </div>
+                                <div class="progress-line vuejs">
                                     <span></span>
                                 </div>
                             </div>
@@ -422,7 +384,7 @@
 
         </div>
         <div class="scrolltotop-button ">
-            <a href="# "><i class="fa fa-arrow-circle-up "></i></a>
+            <a href="# "><i class="far fa-arrow-circle-up "></i></a>
         </div>
         <!--Footer-->
         <div class="row footer " id="footer ">
@@ -430,18 +392,27 @@
             <div class="footer-content-area ">
                 <h4 class="title-follow ">Follow me on</h4>
                 <div class="social-icons ">
-                    <a href="https://web.facebook.com/samuelyombo.bisselele " target="_blank"><i class="fa fa-facebook social-icon-item "></i><span></span></a>
-                    <a href="https://www.freecodecamp.org/sam-bisselele " target="_blank"><i class="fa fa-free-code-camp social-icon-item "></i><span></span></a>
-                    <a href="https://github.com/sambiss1 " target="_blank"><i class="fa fa-github social-icon-item "></i><span></span></a>
-                    <a href="https://www.instagram.com/sambisselele/ " target="_blank"><i class="fa fa-instagram social-icon-item "></i><span></span></a>
-                    <a href="https://www.linkedin.com/in/sam-bisselele-132292218/ " target="_blank"><i class="fa fa-linkedin social-icon-item "></i><span></span></a>
+                    <a href="https://web.facebook.com/samuelyombo.bisselele " target="_blank"><i class="far fa-facebook social-icon-item "></i><span></span></a>
+                    <a href="https://www.freecodecamp.org/sam-bisselele " target="_blank"><i class="far fa-free-code-camp social-icon-item "></i><span></span></a>
+                    <a href="https://github.com/sambiss1 " target="_blank"><i class="far fa-github social-icon-item "></i><span></span></a>
+                    <a href="https://www.instagram.com/sambisselele/ " target="_blank"><i class="far fa-instagram social-icon-item "></i><span></span></a>
+                    <a href="https://www.linkedin.com/in/sam-bisselele-132292218/ " target="_blank"><i class="far fa-linkedin social-icon-item "></i><span></span></a>
                 </div>
                 <div class="footer-copyright-text ">
-                    <p>JOKER CODE © 2022. </p>
+                    <p>{{ site_name }} © 2022. </p>
                 </div>
             </div>
         </div>
+
     </div>
+    <!--Import MainFunctions.JS-->
+    <script src="./assets/js/mainFunctions.js"></script>
+
+    <!--Import other functions-->
+    <script src="./assets/js/functions.js"></script>
+    <script>
+        const mountedApp = app.mount("#container")
+    </script>
 </body>
 
 </html>
